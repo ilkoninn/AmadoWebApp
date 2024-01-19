@@ -1,0 +1,12 @@
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\bin\Debug\net6.0\AmadoApp.Core.deps.json
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\bin\Debug\net6.0\AmadoApp.Core.dll
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\bin\Debug\net6.0\AmadoApp.Core.pdb
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\AmadoApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\AmadoApp.Core.AssemblyInfoInputs.cache
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\AmadoApp.Core.AssemblyInfo.cs
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\AmadoApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\AmadoApp.Core.dll
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\refint\AmadoApp.Core.dll
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\AmadoApp.Core.pdb
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\ref\AmadoApp.Core.dll
+C:\Users\99470\source\repos\AmadoWebApp\AmadoApp.Core\obj\Debug\net6.0\AmadoApp.Core.csproj.AssemblyReference.cache

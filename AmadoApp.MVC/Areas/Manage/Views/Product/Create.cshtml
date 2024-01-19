@@ -1,0 +1,63 @@
+﻿@using AmadoApp.Business.ViewModels.ProductVMs
+@using AmadoApp.Core.Entities
+@model CreateProductVM
+
+
+<div class="container">
+    <h4 class="mb-5">Category Create</h4>
+    <form method="post" enctype="multipart/form-data">
+        <div class="col-4">
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label">Product Title</label>
+                <input asp-for="Title" class="form-control">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="mb-3">
+                <label asp-for="Price" class="form-label">Product Price</label>
+                <input asp-for="Price" class="form-control">
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="mb-3">
+                <label asp-for="IsInStock" class="form-label">Product Is In Stock</label>
+                <input asp-for="IsInStock" class="form-control">
+            </div>
+        </div>
+        <div class="col-4">
+            <label asp-for="BrandId" class="form-label">Product Brand</label>
+            <select asp-for="BrandId" asp-items="new SelectList(Model.Brands, nameof(Brand.Id), nameof(Brand.Name))" class="form-select mx-3">
+                <option value="null">Choose Brand</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <label asp-for="ColorIds" class="form-label">Product Colors</label>
+            <br />
+            <select asp-for="ColorIds" asp-items="new SelectList(Model.Colors, nameof(Color.Id), nameof(Color.Name))" class="form-select mx-3">
+            </select>
+        </div>
+        <div class="col-4">
+            <label asp-for="CategoryIds" class="form-label">Product Categories</label>
+            <br />
+            <select asp-for="CategoryIds" asp-items="new SelectList(Model.Categories, nameof(Category.Id), nameof(Category.Name))" class="form-select mx-3">
+            </select>
+        </div>
+        <div class="col-4">
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label">Product Description</label>
+                <input asp-for="Description" class="form-control">
+            </div>
+        </div>
+        <div class="col-4 mb-5">
+            <label asp-for="ProductFiles" class="form-label">Product Images</label>
+            <input asp-for="ProductFiles" class="form-control">
+        </div>
+
+        <div class="mt-4 mb-4" asp-validation-summary=All></div>
+
+        <a asp-action="Table" asp-controller="Product">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a asp-controller="Product" asp-action="Table" class="btn btn-secondary">Cancel</a>
+        </a>
+    </form>
+</div>

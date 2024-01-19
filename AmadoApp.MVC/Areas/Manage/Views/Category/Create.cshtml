@@ -1,0 +1,18 @@
+﻿@using AmadoApp.Business.ViewModels.CategoryVMs
+@model CreateCategoryVM
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Category Title</label>
+            <input asp-for="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mt-4 mb-4" asp-validation-summary=All></div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <a asp-controller="Product" asp-action="Table" class="btn btn-secondary">Cancel</a>
+
+    </form>
+</div>

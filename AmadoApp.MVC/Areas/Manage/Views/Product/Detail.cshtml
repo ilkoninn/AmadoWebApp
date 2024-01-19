@@ -1,0 +1,73 @@
+﻿@using AmadoApp.Core.Entities
+@model Product
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h4 class="mb-1">Product Title: </h4>
+            <h3>@Model.Title</h3>
+        </div>
+        <div class="col-md-6">
+            <h4>Product Price: </h4>
+            <h3>@Model.Price</h3>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h4>Product Colors: </h4>
+            <h3>
+                @{
+                    int countColor = 0;
+                }
+                @foreach (var item in Model.ProductColors)
+                {
+                    countColor++;
+                    @(Model.ProductColors.Count() != countColor ? item.Color.Name + ", " : item.Color.Name + "")
+                }
+            </h3>
+        </div>
+        <div class="col-md-6">
+            <h4>Product Categories: </h4>
+            <h3>
+                @{
+                    int countCategory = 0;
+                }
+                @foreach (var item in Model.ProductCategories)
+                {
+                    countCategory++;
+                    @(Model.ProductCategories.Count() != countCategory ? item.Category.Name + ", " : item.Category.Name + "")
+                }
+            </h3>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h4>Product Brand: </h4>
+            <h3>@Model.Brand.Name</h3>
+        </div>
+        <div class="col-md-6">
+            <h4>Product Is in Stock: </h4>
+            <h3>@(Model.IsInStock ? "In Stock" : "Out of Stock")</h3>
+        </div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <h4>Product Description: </h4>
+            <p style="font-size: 15px">@Model.Description</p>
+        </div>
+    </div>
+
+    <h4 class="mt-4">Product Images:</h4>
+    <div class="row align-items-start">
+        @foreach (var item in Model.ProductImages.Select(x => x.ImageUrl).ToList())
+        {
+            <div class="col-2 mb-3 position-relative">
+                <img style="width: 175px; border-radius: 5px;" src="~/Upload/ProductImages/@item" />
+            </div>
+        }
+    </div>
+
+
+    <a asp-controller="Product" asp-action="Table" class="btn btn-secondary mt-5">Go Back</a>
+
+</div>
