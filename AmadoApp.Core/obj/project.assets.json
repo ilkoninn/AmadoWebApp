@@ -825,11 +825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\99470\\source\\repos\\AmadoWebApp\\AmadoApp.Core\\AmadoApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.Core\\AmadoApp.Core.csproj",
       "projectName": "AmadoApp.Core",
-      "projectPath": "C:\\Users\\99470\\source\\repos\\AmadoWebApp\\AmadoApp.Core\\AmadoApp.Core.csproj",
+      "projectPath": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.Core\\AmadoApp.Core.csproj",
       "packagesPath": "C:\\Users\\99470\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\99470\\source\\repos\\AmadoWebApp\\AmadoApp.Core\\obj\\",
+      "outputPath": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

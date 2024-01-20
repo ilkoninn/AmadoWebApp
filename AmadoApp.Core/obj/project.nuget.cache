@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DCEx+b7kaeWElr21OqRSHfWq/bqHA3WW94g45VbEChr7w5g1nCW5ciYMb/P0tmyRvRFMfieeYo4KEKWDHD+4uQ==",
+  "dgSpecHash": "8nCq3RfyRuAHgWfXU6tZeYGJvNOMveG+IrWqqscAx6AHmTcpRe4uuFPN7QOlLOsxdAeBzlQWMQ2niSkAYXptUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\99470\\source\\repos\\AmadoWebApp\\AmadoApp.Core\\AmadoApp.Core.csproj",
+  "projectFilePath": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.Core\\AmadoApp.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.26\\microsoft.aspnetcore.cryptography.internal.6.0.26.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.26\\microsoft.aspnetcore.cryptography.keyderivation.6.0.26.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HnNfrLIsMHXX6IYMTNyrdXkJmAMejrwK7MWKXQ3+r3ox2kWubel7z17KV03RYA3GF1y0LlnL37FmbuNZfk8oEA==",
+  "dgSpecHash": "gtnHLCJPQU2yJIsNxxm4Zij1aObmVjNW87QzZCVr9zfdsmuSvwfUV39JuRVsBhKMmLEWJI0WCbsLSHHJKkBLfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\99470\\source\\repos\\AmadoWebApp\\AmadoApp.Business\\AmadoApp.Business.csproj",
+  "projectFilePath": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.Business\\AmadoApp.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

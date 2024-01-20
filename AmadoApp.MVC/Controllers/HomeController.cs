@@ -16,9 +16,7 @@ namespace AmadoApp.MVC.Controllers
 
         public async Task<IActionResult> Index()
         {
-            IQueryable<Product> query = await _service.ReadAsync();
-
-            return View(query);
+            return View();
         }
         public async Task<IActionResult> AccessDeniedCustom()
         {

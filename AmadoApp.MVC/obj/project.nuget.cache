@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqg3Zy97DGuOaxJkuYoS1I5EIuPcLfjfa6v107ujbEkyvkLcsHsR+9Ln/cGF5clUdbHYl1apLnkRJM+PXMhBSg==",
+  "dgSpecHash": "abSgfzeb97RYv2dXyzPA9xwq2X9bx6WBex6ljyuYlhWHISoUFzufL4RPNdqHf7LrcLwQj0v9Xllm8x+s3BYVnw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\99470\\source\\repos\\AmadoWebApp\\AmadoApp.MVC\\AmadoApp.MVC.csproj",
+  "projectFilePath": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\AmadoApp.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\99470\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\99470\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

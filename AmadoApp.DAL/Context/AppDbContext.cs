@@ -24,6 +24,7 @@ namespace AmadoApp.DAL.Context
         public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<ProductColor> ProductColors { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Subscribe> Subscribes { get; set; }
 
     }
 }

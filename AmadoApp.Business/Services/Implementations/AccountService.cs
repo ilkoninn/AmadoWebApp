@@ -3,8 +3,12 @@ using AmadoApp.Business.Exceptions.Account;
 using AmadoApp.Business.Exceptions.Commons;
 using AmadoApp.Business.Services.Interfaces;
 using AmadoApp.Business.ViewModels.AccountVMs;
+using AmadoApp.Core.Entities;
 using AmadoApp.Core.Entities.Account;
+using AmadoApp.DAL.Context;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,12 +22,48 @@ namespace AmadoApp.Business.Services.Implementations
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly AppDbContext _context;
 
-        public AccountService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
+        public AccountService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager,
+            RoleManager<IdentityRole> roleManager, AppDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _context = context;
+        }
+
+        public async Task<List<string>> SendConfirmEmailAddress(AppUser user)
+        {
+            Random random = new Random();
+            var data = new List<string>();
+
+
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            string pincode = $"{random.Next(1000, 10000)}";
+
+            SendMessageService.SendEmailMessage(toUser: user.Email, webUser: user.Name, pincode: pincode);
+
+            data.Add(token);
+            data.Add(pincode);
+            data.Add(user.Id);
+
+            return data;
+        }
+
+        public async Task<bool> ConfirmEmailAddress(ConfirmEmailVM vm, string userId, string token, string pincode)
+        {
+            var postPincode = $"{vm.Number1}{vm.Number2}{vm.Number3}{vm.Number4}";
+
+            if(pincode == postPincode)
+            {
+                var user = await _userManager.FindByIdAsync(userId);
+                await _userManager.ConfirmEmailAsync(user, token);
+
+                return true;
+            }
+
+            return false;
         }
 
         public async Task CreateRoles()
@@ -66,7 +106,7 @@ namespace AmadoApp.Business.Services.Implementations
             await _signInManager.SignOutAsync();
         }
 
-        public async Task Register(RegisterVM vm)
+        public async Task<List<string>> Register(RegisterVM vm)
         {
             if (vm.Username is null || vm.Name is null || vm.Surname is null ||
                 vm.Email is null || vm.Password is null || vm.ConfirmPassword is null)
@@ -86,6 +126,7 @@ namespace AmadoApp.Business.Services.Implementations
                     Surname = vm.Surname
                 };
 
+
                 var result = await _userManager.CreateAsync(newUser, vm.Password);
 
                 if (!result.Succeeded)
@@ -96,11 +137,36 @@ namespace AmadoApp.Business.Services.Implementations
                     }
                 }
 
-                await _userManager.AddToRoleAsync(newUser, UserRoles.Admin.ToString());
+                await _userManager.AddToRoleAsync(newUser, UserRoles.Member.ToString());
+
+                return await SendConfirmEmailAddress(newUser);
             }
             else
             {
                 throw new UsedEmailException("This email address used before, try another!", nameof(vm.Email));
+            }
+        }
+
+        public async Task Subscription(SubscribeVM vm)
+        {
+            var existsEmail = await _context.Subscribes.FirstOrDefaultAsync(x => x.EmailAddress == vm.EmailAddress);
+
+            if(existsEmail is null)
+            {
+                Subscribe newSubscription = new()
+                {
+                    EmailAddress = vm.EmailAddress,
+                    CreatedDate = DateTime.Now,
+                    UpdatedDate = DateTime.Now,
+                };
+
+                await _context.Subscribes.AddAsync(newSubscription);
+                await _context.SaveChangesAsync();
+                SendMessageService.SendEmailMessage(toUser: vm.EmailAddress, webUser: "Amado Team", pincode: "");
+            }
+            else
+            {
+                throw new UsedEmailException("This email address used before, try another!", nameof(vm.EmailAddress));
             }
         }
     }
