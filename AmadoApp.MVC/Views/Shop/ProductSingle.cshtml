@@ -11,7 +11,7 @@
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Furniture</a></li>
                         <li class="breadcrumb-item"><a href="#">Chairs</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">@(ViewData["Product"] as Product).Title</li>
+                        <li class="breadcrumb-item active" aria-current="page">@((ViewData["Product"] as Product).Title)</li>
                     </ol>
                 </nav>
             </div>
@@ -64,9 +64,9 @@
                     <!-- Product Meta Data -->
                     <div class="product-meta-data">
                         <div class="line"></div>
-                        <p class="product-price">$@(ViewData["Product"] as Product).Price</p>
+                        <p class="product-price">$@((ViewData["Product"] as Product).Price)</p>
                         <a href="product-details.html">
-                            <h6>@(ViewData["Product"] as Product).Title</h6>
+                            <h6>@((ViewData["Product"] as Product).Title)</h6>
                         </a>
                         <!-- Ratings & Review -->
                         <div class="ratings-review mb-15 d-flex align-items-center justify-content-between">

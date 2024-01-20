@@ -30752,6 +30752,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\045e9de9-19c1-4e0a-9bc4-5b49e3fee3d1pro-big-1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\055f34a9-1620-4cf5-96ec-332b47883791pro-big-2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AmadoApp.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AmadoApp.MVC</BasePath>
+      <RelativePath>Upload/ProductImages/055f34a9-1620-4cf5-96ec-332b47883791pro-big-2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\055f34a9-1620-4cf5-96ec-332b47883791pro-big-2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\08b23f0b-6206-4a09-be6c-5981558863c3pro-big-1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AmadoApp.MVC</SourceId>
@@ -30832,6 +30848,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\2d223e93-2c23-4daf-88b6-b2663de5db94pro-big-1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\4da2a307-de0e-4e1a-8d52-1f5369258996pro-big-3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AmadoApp.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AmadoApp.MVC</BasePath>
+      <RelativePath>Upload/ProductImages/4da2a307-de0e-4e1a-8d52-1f5369258996pro-big-3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\4da2a307-de0e-4e1a-8d52-1f5369258996pro-big-3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\55fecbd0-202c-4d69-b2ac-4f94682517b1pro-big-1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AmadoApp.MVC</SourceId>
@@ -30847,6 +30879,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\55fecbd0-202c-4d69-b2ac-4f94682517b1pro-big-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\5b4ab73e-fbb6-4dc5-b346-399f76a639d3pro-big-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AmadoApp.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AmadoApp.MVC</BasePath>
+      <RelativePath>Upload/ProductImages/5b4ab73e-fbb6-4dc5-b346-399f76a639d3pro-big-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\5b4ab73e-fbb6-4dc5-b346-399f76a639d3pro-big-1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\716542ee-fb54-45a2-ae88-75c0ea7bf7d0pro-big-3.jpg))">
       <SourceType>Package</SourceType>
@@ -31007,6 +31055,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\a4d7915d-43db-49ca-aeed-1c00e095f9a0pro-big-2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\d4bccdbe-b21f-40b7-b3d5-2bbbc3315d82pro-big-4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AmadoApp.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AmadoApp.MVC</BasePath>
+      <RelativePath>Upload/ProductImages/d4bccdbe-b21f-40b7-b3d5-2bbbc3315d82pro-big-4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\d4bccdbe-b21f-40b7-b3d5-2bbbc3315d82pro-big-4.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Upload\ProductImages\f6c41ab3-c394-4c80-8297-0946d372bcc6pro-big-4.jpg))">
       <SourceType>Package</SourceType>

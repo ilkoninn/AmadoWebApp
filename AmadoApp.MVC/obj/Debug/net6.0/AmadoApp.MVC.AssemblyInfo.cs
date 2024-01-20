@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmadoApp.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+384eb5359304f07b096fc221f32267795e914de2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7e8879eb75122c8469e849a9b271828ab926a51")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmadoApp.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmadoApp.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

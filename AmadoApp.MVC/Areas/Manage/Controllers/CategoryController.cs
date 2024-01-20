@@ -61,7 +61,7 @@ namespace AmadoApp.MVC.Areas.Manage.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Moderator, Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             try

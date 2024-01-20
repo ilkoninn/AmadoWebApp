@@ -20,12 +20,12 @@ namespace AmadoApp.Business.Services.Implementations
                     {
                         client.UseDefaultCredentials = false;
                         client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                        client.Credentials = new NetworkCredential("bd7h15zbx@code.edu.az", "brxv pfya jcaz xfot");
+                        client.Credentials = new NetworkCredential("karamlma@code.edu.az", "sgor hnsn ldix ysbk");
                         client.EnableSsl = true;
 
                         var mailMessage = new MailMessage()
                         {
-                            From = new MailAddress("bd7h15zbx@code.edu.az"),
+                            From = new MailAddress("karamlma@code.edu.az"),
                             Subject = "Welcome to Diana Website",
                             Body = $"Hello I am from {webUser}" +
                             $"<p>Welcome to Diana, your ultimate destination for style inspiration and exclusive updates! As a valued subscriber, you're in for a treat. Get ready to elevate your inbox with a curated selection of fashion insights, lifestyle trends, and insider news tailored specifically for you. Delight in early access to our latest collections, limited-time offers, and exclusive promotions, all delivered directly to your inbox. Your preferences matter, and we're committed to providing a personalized experience that matches your unique taste. Join our vibrant community, share your thoughts, and engage with fellow subscribers. Your privacy is important to us, and we ensure the security of your information. Expect surprises – from exciting giveaways to special treats, we love to spoil our subscribers. Get set for a subscription journey filled with elegance, sophistication, and endless style possibilities. Embrace your individuality with Diana, where every newsletter is a celebration of your distinct persona.<p>",
@@ -41,12 +41,12 @@ namespace AmadoApp.Business.Services.Implementations
                     {
                         client.UseDefaultCredentials = false;
                         client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                        client.Credentials = new NetworkCredential("bd7h15zbx@code.edu.az", "brxv pfya jcaz xfot");
+                        client.Credentials = new NetworkCredential("karamlma@code.edu.az", "sgor hnsn ldix ysbk");
                         client.EnableSsl = true;
 
                         var mailMessage = new MailMessage()
                         {
-                            From = new MailAddress("bd7h15zbx@code.edu.az"),
+                            From = new MailAddress("karamlma@code.edu.az"),
                             Subject = "Welcome to Diana Website",
                             Body = $"Hello I am from {webUser} :D" +
                             $"<p>" +
@@ -68,12 +68,12 @@ namespace AmadoApp.Business.Services.Implementations
                     {
                         client.UseDefaultCredentials = false;
                         client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                        client.Credentials = new NetworkCredential("bd7h15zbx@code.edu.az", "brxv pfya jcaz xfot");
+                        client.Credentials = new NetworkCredential("karamlma@code.edu.az", "sgor hnsn ldix ysbk");
                         client.EnableSsl = true;
 
                         var mailMessage = new MailMessage()
                         {
-                            From = new MailAddress("bd7h15zbx@code.edu.az"),
+                            From = new MailAddress("karamlma@code.edu.az"),
                             Subject = "Welcome to Diana Website",
                             Body = $"Hello {webUser}, " +
                             $"Thank you for visiting our website. " +
