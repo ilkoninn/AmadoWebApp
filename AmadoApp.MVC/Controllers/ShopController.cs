@@ -29,7 +29,8 @@ namespace AmadoApp.MVC.Controllers
         {
             Product oldProduct =  await _productService.ReadIdAsync(id);
 
-            return View(oldProduct);
+            ViewData["Product"] = oldProduct;
+            return View();
         }
     }
 }

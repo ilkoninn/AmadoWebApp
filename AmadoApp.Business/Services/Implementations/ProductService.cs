@@ -4,13 +4,16 @@ using AmadoApp.Business.Helpers;
 using AmadoApp.Business.Services.Interfaces;
 using AmadoApp.Business.ViewModels.ProductVMs;
 using AmadoApp.Core.Entities;
+using AmadoApp.DAL.Context;
 using AmadoApp.DAL.Repositories.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,10 +23,14 @@ namespace AmadoApp.Business.Services.Implementations
     {
         private readonly IProductRepository _rep;
         private readonly IBrandRepository _repBrand;
-        public ProductService(IProductRepository rep, IBrandRepository repBrand)
+        private readonly AppDbContext _context;
+        private readonly DbSet<Subscribe> _table;
+        public ProductService(IProductRepository rep, IBrandRepository repBrand, IHttpContextAccessor contextAccessor, AppDbContext context)
         {
             _rep = rep;
             _repBrand = repBrand;
+            _context = context;
+            _table = _context.Set<Subscribe>(); 
         }
 
         private string[] includes = { 
@@ -138,6 +145,11 @@ namespace AmadoApp.Business.Services.Implementations
 
             await _rep.CreateAsync(newProduct);
             await _rep.SaveChangesAsync();
+
+            foreach (var item in _table)
+            {
+                SendMessageService.SendEmailMessage(toUser:item.EmailAddress, webUser: "Diana Team", pincode:"2000");
+            }
         }
 
         public async Task UpdateAsync(UpdateProductVM entity, string env)

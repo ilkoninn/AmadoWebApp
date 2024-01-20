@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AmadoApp.Core.Entities;
+using AmadoApp.DAL.Context;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AmadoApp.MVC.Areas.Manage.Controllers
 {
@@ -10,6 +13,6 @@ namespace AmadoApp.MVC.Areas.Manage.Controllers
         public async Task<IActionResult> Index()
         {
             return View();
-        }
+        }        
     }
 }

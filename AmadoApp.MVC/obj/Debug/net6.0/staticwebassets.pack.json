@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\AmadoApp.MVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\042bc933-0fe5-451a-a291-568194c982c8pro-big-3.jpg",
+      "PackagePath": "staticwebassets\\Upload\\ProductImages\\042bc933-0fe5-451a-a291-568194c982c8pro-big-3.jpg"
+    },
+    {
       "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\045e9de9-19c1-4e0a-9bc4-5b49e3fee3d1pro-big-1.jpg",
       "PackagePath": "staticwebassets\\Upload\\ProductImages\\045e9de9-19c1-4e0a-9bc4-5b49e3fee3d1pro-big-1.jpg"
     },
@@ -45,8 +49,16 @@
       "PackagePath": "staticwebassets\\Upload\\ProductImages\\73e7e843-078c-48aa-aba9-3bfa2ffff46aproduct1.jpg"
     },
     {
+      "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\8134e3d7-ee74-41de-8d8c-742aa2d0320epro-big-1.jpg",
+      "PackagePath": "staticwebassets\\Upload\\ProductImages\\8134e3d7-ee74-41de-8d8c-742aa2d0320epro-big-1.jpg"
+    },
+    {
       "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\862d9cbf-063c-41ff-b198-2deb5612274cpro-big-1.jpg",
       "PackagePath": "staticwebassets\\Upload\\ProductImages\\862d9cbf-063c-41ff-b198-2deb5612274cpro-big-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\8ab87260-82b7-40d2-a419-f4c407f71ccbpro-big-4.jpg",
+      "PackagePath": "staticwebassets\\Upload\\ProductImages\\8ab87260-82b7-40d2-a419-f4c407f71ccbpro-big-4.jpg"
     },
     {
       "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\92c2f116-d353-4648-88d0-80ad4d91fa5cpro-big-2.jpg",
@@ -59,6 +71,10 @@
     {
       "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\9aa38502-b46f-482e-93fa-159ab42a5838pro-big-1.jpg",
       "PackagePath": "staticwebassets\\Upload\\ProductImages\\9aa38502-b46f-482e-93fa-159ab42a5838pro-big-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\a4d7915d-43db-49ca-aeed-1c00e095f9a0pro-big-2.jpg",
+      "PackagePath": "staticwebassets\\Upload\\ProductImages\\a4d7915d-43db-49ca-aeed-1c00e095f9a0pro-big-2.jpg"
     },
     {
       "Id": "C:\\Users\\99470\\Desktop\\AmadoWebApp\\AmadoApp.MVC\\wwwroot\\Upload\\ProductImages\\f6c41ab3-c394-4c80-8297-0946d372bcc6pro-big-4.jpg",

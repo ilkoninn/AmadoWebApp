@@ -162,7 +162,7 @@ namespace AmadoApp.Business.Services.Implementations
 
                 await _context.Subscribes.AddAsync(newSubscription);
                 await _context.SaveChangesAsync();
-                SendMessageService.SendEmailMessage(toUser: vm.EmailAddress, webUser: "Amado Team", pincode: "");
+                SendMessageService.SendEmailMessage(toUser: vm.EmailAddress, webUser: "Amado Team", pincode: "1000");
             }
             else
             {
